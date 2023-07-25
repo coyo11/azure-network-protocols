@@ -31,8 +31,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-
- 1.) The first thing we are going to do is create a resource group so we can put both of our virtual machines in. Once we have our resource group made we then want to make our first virtual machine. The first virtual machine we are going to make is a Windows 10 vm. Select the resource you made, and then name the virtual machine VM1. Make sure you select Windows 10 Pro, version 22H as the operating system. As for the size of the machine we are going to want atleast 2 vcpus, and 16 gb of memory. Create a username and password of your choosing, and keep the inbound port rules as the default options.
+1.) We'll start by creating a resource group to house both our virtual machines. After setting up the resource group, we'll proceed to establish our first virtual machine. This initial machine will run on Windows 10. Choose the resource group you've created and label the virtual machine as VM1. Ensure you opt for Windows 10 Pro, version 22H for the operating system. The machine should have a minimum of 2 vcpus and 16 GB of memory. Set up a username and password of your preference, and retain the default options for the inbound port rules.
 
 <p>
 <img src="https://imgur.com/WgPD275.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -78,9 +77,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
  
  Click review and create, and it will create our second VM.
  
- 2.) Now that we have both virtual machines up and running we are going to connect to our Windows 10 vm using the remote desktop connection app. Once we are connected we are going to go to our browser and download and install Wireshark.
- 
- "Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education." 
+2.) With both virtual machines operational, let's connect to our Windows 10 VM using the Remote Desktop Connection application. After connecting, navigate to your browser to download and install Wireshark.
+
+"Wireshark is an open-source packet analyzer available at no cost. It's commonly utilized for network troubleshooting, analysis, and the development of software and communication protocols, as well as educational purposes."
  
  3.) Open wireshark and filter for ICMP traffic only.
  
